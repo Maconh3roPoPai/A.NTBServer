@@ -1,0 +1,57 @@
+header
+	+clearfix
+	min-height: 475px
+	position: relative
+
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 25px
+		+gradient(90deg, $preto, $vermelho-escuro)
+
+	background:
+		image: url(../images/Fundo-slide-topo-home.jpg)
+		position: top center
+		repeat: no-repeat
+		color: $preto
+		attachment: fixed
+		size: cover
+
+
+	.topo
+		.logo
+			float: left
+			margin 30px 0 0
+			img
+				width: 70px
+				height: 35px
+		
+		.links
+			float: right
+			margin: 35px 0 0
+			
+			nav
+				+breakpoint($tablet)
+					display: none
+
+				+breakpoint($celular)
+					display: none
+				ul
+					li
+						display: inline-block
+						margin: 0 20px 0 0
+						a
+							color: $branco
+							text-transform: uppercase
+
+	h1
+		clear: both
+		color: $branco
+		margin: 180px auto 30px auto
+		border: 3px solid $branco
+		padding: 20px
+		text-align: center
+		display: table

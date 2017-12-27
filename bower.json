@@ -1,0 +1,17 @@
+{
+  "name": "ntb",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sass-flex-mixin": "^1.0.3"
+  }
+}

@@ -1,0 +1,51 @@
+section.miolo
+		.itens
+			+flexbox
+			+align-items(center)
+			+justify-content(space-around)
+			margin: 50px 0
+			text-align: center
+
+			+make-sm-column(10)
+			+make-sm-column-offset(1)
+
+			+breakpoint($tablet)
+				display: block
+
+			[class^="icone-"]
+				width: 90px
+				height: 90px
+				background-color: $cinza
+				+border-radius(120px)
+				text-align: center
+				line-height: 85px
+				color: $branco
+				+font-size(55px)
+				
+				&.icone-Grupo
+					+order(1) 
+
+				&.icone-Trofeu
+					+order(2)
+
+				&.icone-Loja
+					+order(3)
+
+				+breakpoint($tablet)
+					display: inline-block
+					width: 70px
+					height: 70px
+					line-height: 70px
+					+font-size(50px)
+					margin: 0 5px
+
+
+		.textos
+			+make-sm-column(8)
+			+make-sm-column-offset(2)
+			text-align: center
+
+			.botao
+				display: table
+				margin: 30px auto
+		
